@@ -1,4 +1,4 @@
-const coach = require('../../constructor_design_pattern/factory/withClass/coach');
+const coach = require('../../creational/factory/withClass/coach');
 
 // without inheriting we simply modify the base object properties,
 class updatedCoach {
