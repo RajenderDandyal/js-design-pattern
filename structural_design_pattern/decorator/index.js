@@ -1,7 +1,7 @@
 const coach = require('../../constructor_design_pattern/factory/withClass/coach');
 
 // without inheriting we simply modify the base object properties,
-class Hobby {
+class updatedCoach {
     constructor(baseObj){
         this.name = baseObj.name + "ender dandyal";
         this.profession = "Sr."+baseObj.profession.toUpperCase();
@@ -9,8 +9,8 @@ class Hobby {
     }
 }
 
-let updatedCoach = new Hobby(new coach('raj', 'developer', '250000'), "cricket")
+let Coach = new updatedCoach(new coach('raj', 'developer', '250000'))
 
-console.log(updatedCoach.name,updatedCoach.profession, updatedCoach.salary)
+console.log(Coach.name, Coach.profession, Coach.salary)
 
 
